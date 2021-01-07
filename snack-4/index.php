@@ -7,6 +7,18 @@ dovrà contenere lo stesso numero più di una volta
 
 $random_numbers = [];
 
+
+// meglio usare ciclo while!
+
+
+while(count($random_numbers) < 15){
+    $new_number = rand(1, 100);
+    if(!in_array($new_number, $random_numbers)){
+        array_push($random_numbers, $new_number);
+    };
+};
+
+/*
 for ($i = 0; $i < 15; $i++){
     $new_number = rand(1, 100);
     if(in_array($new_number, $random_numbers)){
@@ -15,7 +27,7 @@ for ($i = 0; $i < 15; $i++){
         array_push($random_numbers, $new_number);
     }
 };
-
+*/
 echo "<h1>Random Numbers</h1>";
 echo "<ul>";
 

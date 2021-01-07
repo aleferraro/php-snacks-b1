@@ -37,11 +37,11 @@ $db = [
     <h3 style="text-align: center;">Teachers</h3>
     <ul>
         <?php 
-            foreach ($db as $x => $value){
+            foreach ($db['teachers'] as $x => $value){
         ?>
         <li>
             <?php
-                    echo $value[0]['name'] . " " . $value[0]['lastname'];     
+                    echo $value['name'] . " " . $value['lastname'];     
                 };
             ?>
         </li>
@@ -52,11 +52,11 @@ $db = [
     <h3 style="text-align: center;">PM</h3>
     <ul>
         <?php 
-            foreach ($db as $x => $value){
+            foreach ($db['pm'] as $x => $value){
         ?>
         <li>
             <?php
-                    echo $value[1]['name'] . " " . $value[1]['lastname'];     
+                    echo $value['name'] . " " . $value['lastname'];     
                 };
             ?>
         </li>
